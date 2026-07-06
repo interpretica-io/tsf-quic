@@ -54,7 +54,7 @@ rpc_quic_available(rcf_rpc_server *rpcs, te_bool *has_http3,
     {
         if (has_http3 != NULL)
             *has_http3 = out.has_http3;
-        take_string(version, out.version);
+        take_string(version, out.tls_version);
     }
     RETVAL_TE_ERRNO(quic_available, out.retval);
 }

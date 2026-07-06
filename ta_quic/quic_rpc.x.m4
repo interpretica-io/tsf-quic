@@ -25,7 +25,7 @@ struct tarpc_quic_available_out {
 
     tarpc_int       retval;
     tarpc_bool      has_http3;
-    string          version<>;
+    string          tls_version<>;
 };
 
 /*

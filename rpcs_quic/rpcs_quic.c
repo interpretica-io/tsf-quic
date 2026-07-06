@@ -44,7 +44,7 @@ TARPC_FUNC_STATIC(quic_available, {},
 {
     te_bool has_http3 = false;
 
-    MAKE_CALL(out->retval = func(&has_http3, &out->version));
+    MAKE_CALL(out->retval = func(&has_http3, &out->tls_version));
     out->has_http3 = has_http3;
     out->common.errno_changed = false;
 })
